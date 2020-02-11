@@ -1,0 +1,1 @@
+This is the fourth HTML project from Freecodecamp. This challenge is to create a page with documentation on Javascript in an organized manner. On the right and page are navigation links to navigate to different sections in the page. The page also includes code snippets.
