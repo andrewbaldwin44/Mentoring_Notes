@@ -4,13 +4,48 @@
 <div class="main-doc">
   <h2>Resistor Color Duo</h2>
   <section class="comment-section">
+    <h3 id="destructuring">Destructuring</h3>
+    <p class="note">
+        The first thing I would suggest is taking a look at
+        [Destructuring Assigment](https://javascript.info/destructuring-assignment).
+        This can make for a very elegant way to 'destructure' the Array, rather than
+        using indexes.
+    </p>
+  </section>
+  <section class="comment-section">
     <h3 id="single-responsibility-duo">Single Responsibility</h3>
     <p class="note">
-        Have a look at the Single Responsibility Principle of functions,
-        meaning we only ever want our functions to handle one concern. Here,
-        everything that is concerned with rounding is a seperate concern and
+        Next, have a look at the [Single Responsibility Principle]
+        (https://codepen.io/allanpope/post/single-responsibility-principle)
+        of functions, meaning we only ever want our functions to handle one
+        concern. Here, getting the index of a color is a separate concern and
         should therefore be handled by a second function. We should see that
-        this will help to make our code more readable.
+        this will alleviate repetition and make our code more readable.
+    </p>
+  </section>
+  <section class="comment-section">
+    <h3 id="math-method">Math Method</h3>
+    <p class="note">
+      There is also a mathematical approach to this exercise. If we look at our
+      expected output, we will notice that our first color value is in the _one's_
+      position, and the second is in the _ten's_ position. If we **multiply** our
+      number by it's base, we won't even have to deal with strings!<br><br>
+
+      Consider this example:<br><br>
+
+      ```<br>
+      tens_position = 2<br>
+      ones_position = 1<br>
+      return 2 * 10 + 1 * 1 // 21<br>
+      ```
+    </p>
+  </section>
+  <section class="comment-section">
+    <h3 id="prefer-number">Prefer Number()</h3>
+    <p class="note">
+        Lastly, we want to prefer using the `Number()` method rather than
+        `parseInt()` when we _know_ the input. Here we _know_ the input is
+        always going to be a String.
     </p>
   </section>
   <h2>Space Age</h2>
@@ -24,9 +59,10 @@
     </p>
     <h3 id="single-responsibility-space">Single Responsibility</h3>
     <p class="note">
-        Have a look at the Single Responsibility Principle of functions,
-        meaning we only ever want our functions to handle one concern. Here,
-        everything that is concerned with rounding is a seperate concern and
+        Have a look at the [Single Responsibility Principle]
+        (https://codepen.io/allanpope/post/single-responsibility-principle)
+        of functions, meaning we only ever want our functions to handle one concern.
+        Here, everything that is concerned with rounding is a seperate concern and
         should therefore be handled by a second function. We should see that
         this will help to make our code more readable.
     </p>
