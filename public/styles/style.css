@@ -15,6 +15,21 @@ header {
   font-size: 1.5rem;
 }
 
+h2 {
+  font-size: 1.8em;
+  font-weight: bold;
+  width: 100%;
+  border-bottom: 1px solid black;
+  padding: 5px;
+  margin: 20px 0;
+}
+
+h3 {
+  font-size: 1.5em;
+  font-weight: bold;
+  padding: 20px 5px;
+}
+
 .home-container {
   display: flex;
   flex-direction: column;
@@ -42,6 +57,13 @@ header {
   height: 100%;
   border-right: solid gray;
 }
+.summary {
+  box-sizing: border-box;
+  min-height: 60px;
+  width: 100%;
+  padding: 20px;
+  cursor: pointer;
+}
 .nav-link {
   display: flex;
   align-items: center;
@@ -52,40 +74,14 @@ header {
   padding-left: 20px;
 }
 
-
-/**Main Section Containing JS Documentation**/
 .main-doc {
   position: absolute;
   margin-left: 300px;
   padding: 5px 20px;
 }
-article {
+.exercise-section {
+  margin-left: 20px;
+}
+.note {
   margin-left: 10px;
-}
-
-/**Code Snippets Style**/
-code {
-  display: block;
-  background: rgb(228, 228, 228);
-  padding: 15px;
-  margin: 15px;
-  line-height: 2;
-  border-radius: 2px;
-}
-
-/**Mobile Phones**/
-@media (max-width: 800px) {
-  #navbar {
-    position: relative;
-    width: 100%;
-  }
-  #nav-links {
-    height: 235px;
-    overflow-y: scroll;
-  }
-  #main-doc {
-    margin-left: 20px;
-    margin-top: 20px;
-    margin-left: 5px;
-  }
 }
