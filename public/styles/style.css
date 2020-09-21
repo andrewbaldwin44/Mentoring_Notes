@@ -1,11 +1,36 @@
-/**Import font**/
-@import url('https://fonts.googleapis.com/css?family=PT+Serif&display=swap');
-/**Styling for main document**/
 html {
   font-size: 18px;
   font-style: 'PT Serif', serif;
-  line-height: 1.5;
+  line-height: 1.2;
 }
+
+body {
+  height: 100vh;
+  width: 100vw;
+  overflow-x: hidden;
+}
+
+.home-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  width: 100%;
+}
+
+.home-container a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: black;
+  height: 50px;
+  width: 200px;
+  border: 1px solid black;
+  margin: 10px 0;
+  padding: 10px;
+}
+
 
 /**Header Styling**/
 header {
