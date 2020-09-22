@@ -74,6 +74,26 @@
       1 * Math.pow(10, 12);<br>
       ```
     </p>
+    <h3 id="date-parse">Date.parse()</h3>
+    <p class="note">
+      `Date.parse()` is not the ideal method to be using in this case because it is
+      meant to _parse_ a Date String (and here we have a Date Object). Have a look at
+      the [JavaScript Date Methods]
+      (https://www.tutorialspoint.com/javascript/javascript_date_object.htm) and see if we
+      can find one that would be more appropriate for the use case here.
+    </p>
+    <h3 id="date-milliseconds">Work with Milliseconds</h3>
+    <p class="note">
+      Whenever we're working with Date's in Programming, we want to prefer working in
+      Milliseconds. So here, what we need to do is _extract_ the milliseconds from the
+      Date Object and convert our gigasecond into a gigasecond _expressed_ in milliseconds.
+      This way we'll be able to calculate the **new** milliseconds and pass this directly
+      into the Date arguments: `new Date(milliseconds)`<br><br>
+
+      Have a look at the methods for the [JavaScript Date Object]
+      (https://www.tutorialspoint.com/javascript/javascript_date_object.htm) and see if you
+      can find the one that will _extract_ the milliseconds.
+    </p>
   </section>
   <h2>Space Age</h2>
   <section class="comment-section">
@@ -133,6 +153,20 @@
       is it makes the code very difficult to _scale_ (image if we had 200 planets!).
       So what we want to have a look at is an appropriate [JavaScript Data Type]
       (https://www.w3schools.com/js/js_datatypes.asp) to make use of.
+    </p>
+    <h3 id="round-space">Math.round() Precision</h3>
+    <p class="note">
+      JavaScript's rounding is quite tricky. One way that we can handle the rounding in
+      this exercise would be:<br>
+      ```<br>
+      // For specifically two decimal places:<br>
+      <br>
+      Math.round(number * 100) / 100;<br>
+      <br>
+      // Or<br>
+      <br>
+      Math.round(number * Math.pow(10, precision)) / Math.pow(10, precision);<br>
+      ```
     </p>
   </section>
 </div>
