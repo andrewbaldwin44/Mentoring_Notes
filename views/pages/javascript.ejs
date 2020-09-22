@@ -57,6 +57,24 @@
         conveys its intent to readers! :)
     </p>
   </section>
+  <h2>Gigasecond</h2>
+  <section class="comment-section">
+    <h3 id="scientific-notation-giga">Scientific Notation</h3>
+    <p class="note">
+      We can write this number in a more concise way using Scientific Notation:<br>
+      ```<br>
+      1e12;<br>
+      <br>
+      // or<br>
+      <br>
+      1 * 10**12;<br>
+      <br>
+      // or<br>
+      <br>
+      1 * Math.pow(10, 12);<br>
+      ```
+    </p>
+  </section>
   <h2>Space Age</h2>
   <section class="comment-section">
     <h3 id="magic-numbers">Magic Numbers</h3>
@@ -71,9 +89,50 @@
         Have a look at the [Single Responsibility Principle]
         (https://codepen.io/allanpope/post/single-responsibility-principle)
         of functions, meaning we only ever want our functions to handle one concern.
-        Here, everything that is concerned with rounding is a seperate concern and
+        Here, everything that is concerned with rounding is a separate concern and
         should therefore be handled by a second function. We should see that
         this will help to make our code more readable.
+    </p>
+    <h3 id="scientific-notation-space">Scientific Notation</h3>
+    <p class="note">
+      We can write our large number in a more concise way using Scientific Notation:<br>
+      ```<br>
+      315576e2;<br>
+      <br>
+      // or<br>
+      <br>
+      315576 * 10**2;<br>
+      <br>
+      // or<br>
+      <br>
+      315576 * Math.pow(10, 2);<br>
+      ```
+    </p>
+    <h3 id="to-fixed">toFixed()</h3>
+    <p class="note">
+      There is much discussion on using `Math.round()` vs `toFixed()` for which one is
+      better. Personally, I would recommend you to use `Math.round()`. Using `toFixed`
+      causes 'type juggling' and it's not necessary. Then in order to improve the
+      readability factor, we can create a separate function that concerns itself with the
+      rounding.
+    </p>
+    <h3 id="naming-space">Naming</h3>
+    <p class="note">
+      The naming in this exercise is tricky!<br>
+    - `ORBITAL_PERIOD_SECONDS`: I would say the number that this represents is the
+    **seconds** in an **Earth Year**<br>
+    - `ORBITAL_PERIOD_RATIOS`: We can be a little more descriptive here. Are they ratios
+    or do they have a unit?
+    - `SPACE_AGE`: The data represented in this Object are **orbital periods** of
+    _specific_ planets in **Earth Years**. How can we have the name reflect this?
+    - `EARTH_SECONDS_IN_YEAR`: Perfect! Bang on! Right on the money!
+    </p>
+    <h3 id="switch-statement-space">Switch Statement</h3>
+    <p class="note">
+      First off, interesting use of a `switch` statement here. The problem with this
+      is it makes the code very difficult to _scale_ (image if we had 200 planets!).
+      So what we want to have a look at is an appropriate [JavaScript Data Type]
+      (https://www.w3schools.com/js/js_datatypes.asp) to make use of.
     </p>
   </section>
 </div>
