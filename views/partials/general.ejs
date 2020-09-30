@@ -4,52 +4,10 @@
 <overlay class="overlay" id="overlay" style="display: none;">
   <div class="overlay-content">
     <section class="comment-section">
-      <h3>Introduction</h3>
-      <p class="note">
-        Hey there!<br><br>
-
-        Awesome work getting those tests passing! :) You're off to a great start with this
-        one!<br><br>
-
-        I have a few pointers for you:<br>
-        1.
-      </p>
-      <h3>Sign Off</h3>
-      <p class="note">
-        I want to give you hints without giving too much away, but please let me
-        know if anything is unclear or if you have any questions!. I'm here to help! :)<br><br>
-
-        Andrew.
-      </p>
-      <h3>Skeleton File</h3>
-      <p class="note">
-        As a quick aside, feel free to remove anything that's not pertinent to your
-        solution. So here, the 'skeleton file' comments can go away.
-      </p>
-      <h3>Re-Declaration</h3>
-      <p class="note">
-        We should move this constant to the top level (outside of the function).
-        This is because we don't want to re-declare it with each function call, nor do
-        we need them to be exported.
-      </p>
-      <h3>Global Constants</h3>
-      <p class="note">
-        By convention, global constants are written in
-        SCREAMING_SNAKE_CASE. So for example, `` would become ``
-      </p>
-      <h3>Variable Declaration</h3>
-      <p class="note">
-        We want to prefer declaring our variables with `const` anytime we
-        have a value that's never going to change.
-      </p>
-      <h3>Stale</h3>
-      <p class="note">
-        I see you posted this quite some time ago, we apologize for the delay!
-        Let me know if you're still interested in looking at this and I'd be happy
-        to help you out!<br><br>
-
-        Talk soon!
-      </p>
+      <% generalNotesData.forEach(({ name, note }) => { %>
+        <h3><%- name -%></h3>
+        <p class="note"><%- note -%></p>
+      <% }) %>
     </section>
   </div>
 </overlay>
