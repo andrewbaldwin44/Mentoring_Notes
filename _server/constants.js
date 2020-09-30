@@ -76,6 +76,9 @@ const NAVIGATION = {
       ]
     }
   ],
+  ruby: [
+
+  ],
 };
 
 const GLOBAL_GENERAL_NOTES = [
@@ -152,6 +155,9 @@ const GENERAL_NOTES = {
         have a value that's never going to change. \
       "
     },
+  ],
+  ruby: [
+    ...GLOBAL_GENERAL_NOTES,
   ],
 };
 
