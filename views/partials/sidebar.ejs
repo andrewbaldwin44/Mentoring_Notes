@@ -1,31 +1,14 @@
 <nav class="sidebar">
   <section class="nav-links">
-    <details class="summary">
-        <summary>Resistor Color Duo</summary>
+    <% navigationData.forEach(({ exercise, sections }) => { %>
+      <details class="summary">
+          <summary><%= exercise %></summary>
+          <%= console.log(sections) %>
 
-        <a class="nav-link" href="#destructuring">Destructuring</a>
-        <a class="nav-link" href="#single-responsibility-duo">Single Responsibility</a>
-        <a class="nav-link" href="#math-method">Math Method</a>
-        <a class="nav-link" href="#prefer-number">Prefer Number</a>
-        <a class="nav-link" href="#unary-plus">Avoid Unary Plus</a>
-    </details>
-    <details class="summary">
-        <summary>Gigasecond</summary>
-
-        <a class="nav-link" href="#scientific-notation-giga">Scientific Notation</a>
-        <a class="nav-link" href="#date-parse">Date.parse()</a>
-        <a class="nav-link" href="#date-milliseconds">Work with Milliseconds</a>
-    </details>
-    <details class="summary">
-        <summary>Space Age</summary>
-
-        <a class="nav-link" href="#magic-numbers">Magic Numbers</a>
-        <a class="nav-link" href="#single-responsibility-space">Single Responsibility</a>
-        <a class="nav-link" href="#scientific-notation-space">Scientific Notation</a>
-        <a class="nav-link" href="#to-fixed">toFixed()</a>
-        <a class="nav-link" href="#naming-space">Naming</a>
-        <a class="nav-link" href="#switch-statement-space">Switch Statement</a>
-        <a class="nav-link" href="#round-space">Math.round() Precision</a>
-    </details>
+          <% sections.forEach(({ name, link }) => { %>
+            <a class="nav-link" href=<%= `#${link}` %>><%= name %></a>
+          <% }) %>
+      </details>
+    <% }) %>
   </section>
 </nav>

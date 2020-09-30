@@ -9,8 +9,9 @@ const PORT = process.env.PORT || 8000;
 
 const {
   renderPage,
+  renderNotes,
   handleFourOhFour,
-} = require('./handlers');
+} = require('./_server/handlers');
 
 app
 .use(function(req, res, next) {
@@ -25,7 +26,7 @@ app
 .set('view engine', 'ejs')
 
 .get('/', (req, res) => renderPage(req, res, 'index'))
-.get('/javascript', (req, res) => renderPage(req, res, 'javascript'))
+.get('/javascript', (req, res) => renderNotes(req, res, 'javascript'))
 .get('*', handleFourOhFour)
 
 .listen(PORT, () => console.log(`Listening on port ${PORT}`));
