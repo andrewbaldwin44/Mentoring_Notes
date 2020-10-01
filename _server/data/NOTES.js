@@ -212,7 +212,32 @@ const NOTES = {
     }
   ],
   ruby: [
-
+    {
+      exercise: 'Raindrops',
+      sections: [
+        {
+          name: 'each_with_object Method',
+          link: 'each-with-object-rain',
+          note: " \
+            Check out Ruby's [each_with_object](https://apidock.com/ruby/Enumerable/each_with_object) \
+            method. This can be a more elegant method, rather than creating an empty String. \
+          "
+        },
+        {
+          name: 'Single Responsibility Principle',
+          link: 'single-responsibility-raind',
+          note: " \
+            Have a look at the [Single Responsibility Principle] \
+            (https://codepen.io/allanpope/post/single-responsibility-principle) \
+            of functions (and don't worry about the code examples). We can make \
+            our code more readable by _separating our concerns_. For example, I \
+            would say the condition in our `each` iterator `(number % factor).zero?` \
+            is a separate concern and should therefore be handled by a second function. \
+            This will then do us the favour of describing what this line of code does. \
+          "
+        }
+      ]
+    }
   ],
   python: [
 
