@@ -1,10 +1,8 @@
 <nav class="sidebar">
   <section class="nav-links">
-    <% navigationData.forEach(({ exercise, sections }) => { %>
+    <% notesData.forEach(({ exercise, sections }) => { %>
       <details class="summary">
           <summary><%= exercise %></summary>
-          <%= console.log(sections) %>
-
           <% sections.forEach(({ name, link }) => { %>
             <a class="nav-link" href=<%= `#${link}` %>><%= name %></a>
           <% }) %>
