@@ -1,4 +1,5 @@
-const { NOTES, GENERAL_NOTES } = require('./constants');
+const { NOTES } = require('./data/NOTES');
+const { GENERAL_NOTES } = require('./data/GENERAL_NOTES');
 
 function renderPage(req, res, route, pageData) {
   res.render(`./pages/${route}.ejs`, pageData);
