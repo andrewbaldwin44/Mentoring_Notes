@@ -28,6 +28,7 @@ app
 .get('/', (req, res) => renderPage(req, res, 'index'))
 .get('/javascript', (req, res) => renderNotes(req, res, 'javascript'))
 .get('/ruby', (req, res) => renderNotes(req, res, 'ruby'))
+.get('/python', (req, res) => renderNotes(req, res, 'python'))
 .get('*', handleFourOhFour)
 
 .listen(PORT, () => console.log(`Listening on port ${PORT}`));

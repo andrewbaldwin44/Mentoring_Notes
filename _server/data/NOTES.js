@@ -214,6 +214,9 @@ const NOTES = {
   ruby: [
 
   ],
+  python: [
+
+  ]
 };
 
 module.exports = {

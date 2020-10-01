@@ -9,7 +9,7 @@ function renderNotes(req, res, route) {
   const notesData = NOTES[route];
   const generalNotesData = GENERAL_NOTES[route];
 
-  renderPage(req, res, route, { notesData, generalNotesData });
+  renderPage(req, res, 'notes', { notesData, generalNotesData });
 }
 
 function handleFourOhFour(req, res) {

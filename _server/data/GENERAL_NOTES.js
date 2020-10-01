@@ -76,6 +76,9 @@ const GENERAL_NOTES = {
   ruby: [
     ...GLOBAL_GENERAL_NOTES,
   ],
+  python: [
+    ...GLOBAL_GENERAL_NOTES,
+  ]
 };
 
 module.exports = {

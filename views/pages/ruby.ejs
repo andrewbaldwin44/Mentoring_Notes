@@ -2,6 +2,16 @@
 <%- include('../partials/sidebar') -%>
 <%- include('../partials/general') -%>
 <div class="main-doc">
-
+  <% notesData.forEach(({ exercise, sections }) => { %>
+    <h2><%= exercise %></h2>
+    <% sections.forEach(({ name, link, note }) => { %>
+      <section class="comment-section">
+        <h3 id=<%= `#${link}` %>><%= name %></h3>
+        <p class="note">
+          <%= note %>
+        </p>
+      </section>
+    <% }) %>
+  <% }) %>
 </div>
 <%- include('../partials/foot') -%>
