@@ -20,7 +20,8 @@ const NOTES = {
             Next, have a look at the [Single Responsibility Principle] \
             (https://codepen.io/allanpope/post/single-responsibility-principle) \
             of functions, meaning we only ever want our functions to handle one \
-            concern. Here, getting the index of a color is a separate concern and \
+            concern. Notice how this line of code `COLORS.indexOf()` is happening twice? \
+            So here, getting the index of a color is a separate concern and \
             should therefore be handled by a second function. We should see that \
             this will alleviate repetition and make our code more readable. \
           "
@@ -142,7 +143,7 @@ const NOTES = {
           name: 'Scientific Notation',
           link: 'scientific-notation-space',
           note: " \
-            We can write our large number in a more concise way using Scientific Notation:<br> \
+            We can write our large number using Scientific Notation:<br> \
             ```<br> \
             315576e2;<br> \
             <br> \
@@ -175,9 +176,9 @@ const NOTES = {
             - `ORBITAL_PERIOD_SECONDS`: I would say the number that this represents is the \
             **seconds** in an **Earth Year**<br> \
             - `ORBITAL_PERIOD_RATIOS`: We can be a little more descriptive here. Are they ratios \
-            or do they have a unit? \
+            or do they have a unit?<br> \
             - `SPACE_AGE`: The data represented in this Object are **orbital periods** of \
-            _specific_ planets in **Earth Years**. How can we have the name reflect this? \
+            _specific_ planets in **Earth Years**. How can we have the name reflect this?<br> \
             - `EARTH_SECONDS_IN_YEAR`: Perfect! Bang on! Right on the money! \
           "
         },
@@ -204,7 +205,8 @@ const NOTES = {
             <br> \
             // Or<br> \
             <br> \
-            Math.round(number * Math.pow(10, precision)) / Math.pow(10, precision);<br> \
+            const shift = Math.pow(10, decimal);<br> \
+            Math.round(number * shift) / shift;<br> \
             ``` \
           "
         },
@@ -237,7 +239,7 @@ const NOTES = {
           "
         }
       ]
-    }
+    },
   ],
   python: [
 

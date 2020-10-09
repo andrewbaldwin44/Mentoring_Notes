@@ -65,22 +65,29 @@ const GENERAL_NOTES = {
         have a value that's never going to change. \
       "
     },
+    {
+      name: 'Naming',
+      note: " \
+        Check out [JavaScriptInfo's Article](https://javascript.info/variables#name-things-right) \
+        on naming things right for some more awesome naming tips! \
+      "
+    },
   ],
   ruby: [
     ...GLOBAL_GENERAL_NOTES,
     {
       name: 'Lightweight Initialize',
       note: " \
-      So ideally we want to make our `initialize` as _lightweight_ as possible. You can think \
-      of a Class like the Subway sandwich line. When someone asks for a `Sandwich.new()`, \
-      the worker isn't going to start off by packing the sandwich with everything on the menu. \
-      What if we don't want pickles? So rather they start you off with just the bread \
-      (the bare minimum we need for a sandwich) and then the customer gets to pick and choose \
-      which methods (toppings) they want to add on.<br><br> \
-      \
-      So it's a bit of a funny metaphor but hopefully you see what I'm getting at. We don't want \
-      to do the work of calculating the `latest` score or the `personal_best` until the user asks \
-      for it (simply because they may never ask for it). \
+        So ideally we want to make our `initialize` as _lightweight_ as possible. You can think \
+        of a Class like the Subway sandwich line. When someone asks for a `Sandwich.new()`, \
+        the worker isn't going to start off by packing the sandwich with everything on the menu. \
+        What if we don't want pickles? So rather they start you off with just the bread \
+        (the bare minimum we need for a sandwich) and then the customer gets to pick and choose \
+        which methods (toppings) they want to add on.<br><br> \
+        \
+        So it's a bit of a funny metaphor but hopefully you see what I'm getting at. We don't want \
+        to do the work of calculating the `latest` score or the `personal_best` until the user asks \
+        for it (simply because they may never ask for it). \
       "
     }
   ],
