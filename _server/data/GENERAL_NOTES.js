@@ -65,13 +65,6 @@ const GENERAL_NOTES = {
         have a value that's never going to change. \
       "
     },
-    {
-      name: 'Variable Declaration',
-      note: " \
-        We want to prefer declaring our variables with `const` anytime we \
-        have a value that's never going to change. \
-      "
-    },
   ],
   ruby: [
     ...GLOBAL_GENERAL_NOTES,
