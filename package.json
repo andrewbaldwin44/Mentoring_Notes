@@ -1,6 +1,7 @@
 {
     "name": "mentoring-notes",
     "version": "0.0.1",
+    "license": "UNLICENSED",
     "description": "Mentoring Notes",
     "main": "server.js",
     "scripts": {
