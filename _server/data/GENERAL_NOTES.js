@@ -72,6 +72,14 @@ const GENERAL_NOTES = {
         on naming things right for some more awesome naming tips! \
       "
     },
+    {
+      name: 'Abbreviations',
+      note: " \
+        I do recommend staying away from any abbreviations as their meaning can very easily \
+        become lost or confusing to the reader. My rule of thumb is if we can't find the word \
+        in a standard English dictionary, our variable name isn't clear enough. \
+      "
+    }
   ],
   ruby: [
     ...GLOBAL_GENERAL_NOTES,

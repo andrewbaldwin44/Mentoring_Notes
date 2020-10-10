@@ -62,6 +62,16 @@ const NOTES = {
             traits a coder can develop is the ability to write code that clearly \
             conveys its intent to readers! :) \
           "
+        },
+        {
+          name: "Destructuring Arguments",
+          link: "destructuring-arguments",
+          note: " \
+            We can take the Destructuring one step further and have it happen in the function arguments:<br> \
+            ```<br> \
+            export const decodedValue = ([firstColor, secondColor]) => {...}<br> \
+            ``` \
+          "
         }
       ]
     },
