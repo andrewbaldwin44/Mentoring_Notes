@@ -36,9 +36,26 @@ const GLOBAL_GENERAL_NOTES = [
     note: " \
       Thank you kindly for your awesome feedback! Always appreciate it! :) \
       I use my students testimonials on my [website here](https://andrewbaldwin.herokuapp.com/#testimonials-section). \
-      Let me know if that's ok with you! \
+      Let me know if that's ok with you!<br><br> \
       \
       Andrew. \
+    "
+  },
+  {
+    name: 'Comments',
+    note: " \
+      Have a look at [this article](https://blog.codinghorror.com/coding-without-comments/), \
+      and [this one too](https://blog.codinghorror.com/code-tells-you-how-comments-tell-you-why/) \
+      on the role of comments in code. \
+    "
+  },
+  {
+    name: 'Let vs. Const vs. Var',
+    note: " \
+      In JavaScript, we want to use `let` anytime we have a **mutable** variable (one that we **will** be changed), \
+      and `const` for **immutable** variables (ones that **are never** being changed). `var` is a special case that \
+      we won't use very often. Check out [freecodecamp's article](https://www.freecodecamp.org/news/var-let-and-const-whats-the-difference/) \
+      on the subject for more! \
     "
   }
 ];
