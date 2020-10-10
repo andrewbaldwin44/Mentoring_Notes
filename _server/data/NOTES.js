@@ -17,8 +17,7 @@ const NOTES = {
           name: 'Single Responsibility',
           link: 'single-responsibility',
           note: " \
-            Next, have a look at the [Single Responsibility Principle] \
-            (https://codepen.io/allanpope/post/single-responsibility-principle) \
+            Next, have a look at the [Single Responsibility Principle](https://codepen.io/allanpope/post/single-responsibility-principle) \
             of functions, meaning we only ever want our functions to handle one \
             concern. Notice how this line of code `COLORS.indexOf()` is happening twice? \
             So here, getting the index of a color is a separate concern and \
@@ -38,8 +37,8 @@ const NOTES = {
             Consider this example:<br><br> \
             \
             ```<br> \
-            tens_position = 2<br> \
-            ones_position = 1<br> \
+            tensPosition = 2<br> \
+            onesPosition = 1<br> \
             return 2 * 10 + 1 * 1 // 21<br> \
             ``` \
           "
