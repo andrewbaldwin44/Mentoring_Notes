@@ -31,6 +31,16 @@ const GLOBAL_GENERAL_NOTES = [
       Talk soon!
     `
   },
+  {
+    name: 'Testimonial',
+    note: " \
+      Thank you kindly for your awesome feedback! Always appreciate it! :) \
+      I use my students testimonials on my [website here](https://andrewbaldwin.herokuapp.com/#testimonials-section). \
+      Let me know if that's ok with you! \
+      \
+      Andrew. \
+    "
+  }
 ];
 
 const GENERAL_NOTES = {
