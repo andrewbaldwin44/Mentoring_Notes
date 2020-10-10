@@ -1,6 +1,52 @@
 const NOTES = {
   javascript: [
     {
+      exercise: 'TwoFer',
+      sections: [
+        {
+          name: 'Welcome',
+          link: 'track-welcome',
+          note: " \
+            Hey there and welcome to JavaScript! :) \
+          "
+        },
+        {
+          name: 'Missing Export',
+          link: 'missing-export',
+          note: " \
+          So first off, in order to ensure our tests are passing, we need our `spec` file to \
+          have access to the `twoFer` function. In order to do this, we simply add the keyword `export` \
+          before the function declaration:<br> \
+          ```<br> \
+          export function twoFer(name) {<br><br> \
+          \
+          }<br> \
+          ```<br> \
+          Notice how the `spec` file is using `import` to get the `twoFer` function?<br><br> \
+          \
+          Let me know if there are any questions on this or if you had any trouble getting the tests running! We're here to help! :)<br><br> \
+          \
+          Andrew. \
+          "
+        },
+        {
+          name: 'Default Parameters',
+          link: 'default-parameters',
+          note: " \
+            In JavaScript, we can use [Default Paramaters](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Functions/Default_parameters) \
+            to handle missing arguments \
+          "
+        },
+        {
+          name: 'Template Strings',
+          link: 'template-strings',
+          note: " \
+            You can also have a look at using [Template Strings](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Template_literals) \
+          "
+        }
+      ]
+    },
+    {
       exercise: 'Resistor Color Duo',
       sections: [
         {
