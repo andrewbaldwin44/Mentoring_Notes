@@ -15,7 +15,7 @@ const GLOBAL_GENERAL_NOTES = [
     name: 'Sign Off',
     note: `
       I want to give you hints without giving too much away, but please let me
-      know if anything is unclear or if you have any questions!.
+      know if anything is unclear or if you have any questions!
       I'm here to help! :)<br><br>
 
       Andrew.
