@@ -47,6 +47,18 @@ const NOTES = {
       ]
     },
     {
+      exercise: 'Resistor Color',
+      sections: [
+        {
+          name: "Implicit Return",
+          link: "implicit-return",
+          note: " \
+            Optionally, we could also use [implicit return](https://riptutorial.com/javascript/example/17665/implicit-return) on our `colorCode` function \
+          "
+        },
+      ]
+    },
+    {
       exercise: 'Resistor Color Duo',
       sections: [
         {
@@ -117,7 +129,7 @@ const NOTES = {
             export const decodedValue = ([firstColor, secondColor]) => {...}<br> \
             ``` \
           "
-        }
+        },
       ]
     },
     {

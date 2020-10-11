@@ -42,6 +42,14 @@ const GLOBAL_GENERAL_NOTES = [
     "
   },
   {
+    name: 'Next Exercise',
+    note: " \
+      Best of luck with the next exercise in the meantime! Hope to see you there! :)<br><br> \
+      \
+      Andrew. \
+    "
+  },
+  {
     name: 'Comments',
     note: " \
       Have a look at [this article](https://blog.codinghorror.com/coding-without-comments/), \
