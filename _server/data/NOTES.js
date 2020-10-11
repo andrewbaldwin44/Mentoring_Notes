@@ -198,8 +198,7 @@ const NOTES = {
           name: 'Single Responsibility',
           link: 'single-responsibility-space',
           note: " \
-            Have a look at the [Single Responsibility Principle] \
-            (https://codepen.io/allanpope/post/single-responsibility-principle) \
+            Have a look at the [Single Responsibility Principle](https://codepen.io/allanpope/post/single-responsibility-principle) \
             of functions, meaning we only ever want our functions to handle one concern. \
             Here, everything that is concerned with rounding is a separate concern and \
             should therefore be handled by a second function. We should see that \
