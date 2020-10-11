@@ -90,7 +90,7 @@ const NOTES = {
             There is also a mathematical approach to this exercise. If we look at our \
             expected output, we will notice that our first color value is in the _one's_ \
             position, and the second is in the _ten's_ position. If we **multiply** our \
-            number by it's base, we won't even have to deal with strings!<br><br> \
+            number by it's base, we won't even have to deal with Strings!<br><br> \
             \
             Consider this example:<br><br> \
             \
