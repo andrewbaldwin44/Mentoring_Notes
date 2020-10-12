@@ -43,6 +43,23 @@ const NOTES = {
           note: " \
             You can also have a look at using [Template Strings](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Template_literals) \
           "
+        },
+        {
+          name: 'Exercism Explanation',
+          link: 'exercism-explanation',
+          note: " \
+            First off, I'd like to explain a little about how exercism works.<br><br> \
+            \
+            The idea is that the student will submit iterations (as many as they would like) for a mentor to come and review. \
+            Then when we mentors leave comments, it gives the student a chance to review their code and apply the learnings, just \
+            like we've done here! We can then keep submitting iterations and discussing until we're both happy with the solution. \
+            At that point, the mentor will give you the approval and you're onto the next exercise!<br><br> \
+            \
+            Even at that point, we do always encourage submitting more iterations, exploring different ways to solve an exercise, \
+            and asking questions. We're here for your learning and we can keep submitting iterations until the cows come home! :)<br><br> \
+            \
+            What's awesome about this is the iteration history makes for some awesome notes to refer back to! \
+          "
         }
       ]
     },
